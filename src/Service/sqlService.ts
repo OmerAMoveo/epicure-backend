@@ -1,11 +1,11 @@
 import { Sequelize, DataTypes } from "sequelize";
 
-export const sequelize = new Sequelize('epicure-db','root','nuctucuxy1!',{
+export const sequelize = new Sequelize('epicure-db', 'root', 'nuctucuxy1!', {
     host: 'localhost',
     dialect: 'mysql'
 });
 
-export const Restaurant = sequelize.define('restaurants',{
+export const Restaurant = sequelize.define('restaurants', {
     id: {
         primaryKey: true,
         type: DataTypes.INTEGER,
@@ -41,7 +41,7 @@ export const Restaurant = sequelize.define('restaurants',{
         allowNull: true,
     },
 },
-{timestamps: false});
+    { timestamps: false });
 
 //////////////////////////////////////////////////////////////////////////////////////////
 
@@ -96,19 +96,19 @@ export const Dishes = sequelize.define('dishes', {
         type: DataTypes.BOOLEAN,
         allowNull: false,
     },
-     image: {
+    image: {
         primaryKey: false,
         type: DataTypes.STRING,
         allowNull: false,
-     },
-     comment: {
+    },
+    comment: {
         primaryKey: false,
         type: DataTypes.INTEGER,
         allowNull: false,
-     },
+    },
 
 },
-{timestamps: false})
+    { timestamps: false })
 
 //////////////////////////////////////////////////////////////////////////////////////////
 
@@ -139,17 +139,4 @@ export const Chefs = sequelize.define('chefs', {
         allowNull: true,
     }
 },
-{timestamps: false})
-
-//////////////////////////////////////////////////////////////////////////////////////////
-
- const getAllDishes = async ()=>{
-    const dish = await Dishes.findAll();
-    return dish;
-}
-
-
- const getAllChefs= async() => {
-    const chefs = await Chefs.findAll();
-    return chefs;
-}
+    { timestamps: false })
