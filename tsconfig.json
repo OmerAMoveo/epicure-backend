@@ -6,13 +6,13 @@
 
     /* Modules */
     "module": "commonjs",                                /* Specify what module code is generated. */
-    // "rootDir": "src",                                    /* Specify the root folder within your source files. */
+    "rootDir": "build",                                    /* Specify the root folder within your source files. */
     "resolveJsonModule": true,                           /* Enable importing .json files */
 
     /* JavaScript Support */
     "allowJs": true,                                     /* Allow JavaScript files to be a part of your program. Use the `checkJS` option to get errors from these files. */
 
-    "outDir": "generated",                                   /* Specify an output folder for all emitted files. */
+    "outDir": "build",                                   /* Specify an output folder for all emitted files. */
 
     "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
 
