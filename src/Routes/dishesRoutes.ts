@@ -1,5 +1,5 @@
 import express = require('express');
-import { getAllDishes, getByRestaurantId, getDishById, getSignature } from '../Controller/dishescontroller';
+import { getAllDishes, getByRestaurantId, getDishById, getSignature } from '../Controller/dishesController';
 export const dishesRoutes = express.Router();
 
 dishesRoutes.route('/:resId/:dishName')
